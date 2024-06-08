@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 100vw;
+    background: #CC95C0;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.gameDiv {
+    font-family: 'Tektur', cursive;
+    height: 60vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    justify-content: space-evenly;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.26);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+button:active {
+    background-color: yellow;
+}
+
+.choiceBtn {
+    height: 6vw;
+    width: 6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    font-size: 0.6vw;
+    text-align: center;
+    justify-content: space-evenly;
+    border: none;
+
+}
+
+@media (max-width : 700px) {
+    .choiceBtn {
+        height: 15vw;
+        width: 15vw;
+        font-size: 2vw;
+    }
+
+
+
+
+}
+
+i {
+    font-size: 3vw;
+}
+
+.head {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.win {
+    background: #11998e;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #38ef7d, #119943);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.lose {
+    background: #ED213A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93291E, #ED213A);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #93291E, #ED213A);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.draw {
+    background: #FFB75E;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ED8F03, #FFB75E);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.name {
+    font-size: 2vw;
+}
+
+.myName {
+    font-size: 3vw;
+}
